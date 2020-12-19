@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyHandler", "KeyHandler\KeyHandler.csproj", "{EDDBABA1-BEE2-4BE4-8F3A-676CBAC264B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyHandlerTests", "KeyHandlerTests\KeyHandlerTests.csproj", "{E7DEAA4A-45F7-4556-AFED-9D26BFA25A86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{EDDBABA1-BEE2-4BE4-8F3A-676CBAC264B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDDBABA1-BEE2-4BE4-8F3A-676CBAC264B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDDBABA1-BEE2-4BE4-8F3A-676CBAC264B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7DEAA4A-45F7-4556-AFED-9D26BFA25A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DEAA4A-45F7-4556-AFED-9D26BFA25A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DEAA4A-45F7-4556-AFED-9D26BFA25A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DEAA4A-45F7-4556-AFED-9D26BFA25A86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
