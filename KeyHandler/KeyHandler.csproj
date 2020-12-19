@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net462;net5.0</TargetFrameworks>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>KeyHandler</Title>
+        <Authors>Christopher McMorran</Authors>
+        <Description>This package allows you to determine which keys are being pressed on Windows without having to rely on the mechanisms provided by Microsoft.</Description>
+    </PropertyGroup>
+
+</Project>
