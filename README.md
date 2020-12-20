@@ -3,13 +3,13 @@ Ever written a C# application and needed to capture user input from the keyboard
 
 # Install
 ## With dotnet
-`dotnet add package KeyHandler --version 1.0.2`
+`dotnet add package KeyHandler --version 1.0.3`
 
 ## With PackageReference
-`<PackageReference Include="KeyHandler" Version="1.0.2" />`
+`<PackageReference Include="KeyHandler" Version="1.0.3" />`
 
 ## With NuGet Package Manager
-`Install-Package KeyHandler -Version 1.0.2`
+`Install-Package KeyHandler -Version 1.0.3`
 
 # Example
 
