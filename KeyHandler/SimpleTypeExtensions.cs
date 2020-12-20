@@ -29,6 +29,7 @@ namespace KeyHandler
             dictionary.Add('.', Key.Period);
             dictionary.Add('\t', Key.Tab);
             dictionary.Add(',', Key.Comma);
+            dictionary.Add(' ', Key.Space);
             dictionary.Add('1', Key.One);
             dictionary.Add('2', Key.Two);
             dictionary.Add('3', Key.Three);

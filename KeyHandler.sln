@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyHandler", "KeyHandler\Ke
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyHandlerTests", "KeyHandlerTests\KeyHandlerTests.csproj", "{E7DEAA4A-45F7-4556-AFED-9D26BFA25A86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRunner", "TestRunner\TestRunner.csproj", "{8ADE1DB9-AF47-440D-BC56-76ED176423EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{E7DEAA4A-45F7-4556-AFED-9D26BFA25A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7DEAA4A-45F7-4556-AFED-9D26BFA25A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7DEAA4A-45F7-4556-AFED-9D26BFA25A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ADE1DB9-AF47-440D-BC56-76ED176423EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ADE1DB9-AF47-440D-BC56-76ED176423EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ADE1DB9-AF47-440D-BC56-76ED176423EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ADE1DB9-AF47-440D-BC56-76ED176423EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
