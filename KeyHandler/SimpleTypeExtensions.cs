@@ -5,7 +5,7 @@ namespace KeyHandler
 {
     public static class SimpleTypeExtensions
     {
-        private static Dictionary<char, Key> SpecialCharacters = BuildSpecialCharacters();
+        private static Dictionary<string, Key> SpecialCharacters = BuildSpecialCharacters();
         private static Dictionary<string, Key> KeyValueLookup = BuildLookup();
 
         private static Dictionary<string, Key> BuildLookup()
@@ -21,25 +21,31 @@ namespace KeyHandler
             return dictionary;
         }
 
-        private static Dictionary<char, Key> BuildSpecialCharacters()
+        private static Dictionary<string, Key> BuildSpecialCharacters()
         {
-            var dictionary = new Dictionary<char, Key>();
-            dictionary.Add('/', Key.Slash);
-            dictionary.Add('\\', Key.BackSlash);
-            dictionary.Add('.', Key.Period);
-            dictionary.Add('\t', Key.Tab);
-            dictionary.Add(',', Key.Comma);
-            dictionary.Add(' ', Key.Space);
-            dictionary.Add('1', Key.One);
-            dictionary.Add('2', Key.Two);
-            dictionary.Add('3', Key.Three);
-            dictionary.Add('4', Key.Four);
-            dictionary.Add('5', Key.Five);
-            dictionary.Add('6', Key.Six);
-            dictionary.Add('7', Key.Seven);
-            dictionary.Add('8', Key.Eight);
-            dictionary.Add('9', Key.Nine);
-            dictionary.Add('0', Key.Zero);
+            var dictionary = new Dictionary<string, Key>
+            {
+                {"/", Key.Slash},
+                {"\\", Key.BackSlash},
+                {".", Key.Period},
+                {"\t", Key.Tab},
+                {",", Key.Comma},
+                {" ", Key.Space},
+                {"1", Key.One},
+                {"2", Key.Two},
+                {"3", Key.Three},
+                {"4", Key.Four},
+                {"5", Key.Five},
+                {"6", Key.Six},
+                {"7", Key.Seven},
+                {"8", Key.Eight},
+                {"9", Key.Nine},
+                {"0", Key.Zero},
+                {"UP", Key.Up},
+                {"DOWN", Key.Down},
+                {"LEFT", Key.Left},
+                {"RIGHT", Key.Right}
+            };
             return dictionary;
         }
 
@@ -51,12 +57,12 @@ namespace KeyHandler
         /// <returns>A key.</returns>
         public static Key ToKey(this char character)
         {
-            if (SpecialCharacters.ContainsKey(character))
-            {
-                return SpecialCharacters[character];
-            }
-
             var charString = character.ToString().ToUpper();
+            if (SpecialCharacters.ContainsKey(charString))
+            {
+                return SpecialCharacters[charString];
+            }
+            
             if (KeyValueLookup.ContainsKey(charString))
             {
                 return KeyValueLookup[charString];
@@ -78,8 +84,18 @@ namespace KeyHandler
                 throw new Exception("Empty string");
             }
 
-            var trimmed = str.Trim();
-            return ToKey(trimmed[0]);
+            var charString = str.ToUpper().Trim();
+            if (SpecialCharacters.ContainsKey(charString))
+            {
+                return SpecialCharacters[charString];
+            }
+            
+            if (KeyValueLookup.ContainsKey(charString))
+            {
+                return KeyValueLookup[charString];
+            }
+
+            return ToKey(charString[0]);
         }
     }
 }

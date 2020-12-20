@@ -47,6 +47,13 @@ namespace KeyHandlerTests
         }
         
         [Test]
+        public void TestConvertUp()
+        {
+            var key = "Up".ToKey();
+            Assert.AreEqual(Key.Up, key);
+        }
+        
+        [Test]
         public void TestConvertComma()
         {
             var key = ','.ToKey();
